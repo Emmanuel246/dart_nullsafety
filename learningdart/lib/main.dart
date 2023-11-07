@@ -17,7 +17,8 @@ void test () {
   if (name == "Emmanuel") {
     print("Yes this is Emmanuel");
   } else {
-    print('No this is not Emmanuel')
+    print('No this is not Emmanuel');
+    print('Emmanuel');
   }
 }
 
