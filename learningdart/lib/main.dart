@@ -13,10 +13,11 @@ void main() {
 }
 
 void test () {
-  final name = "Lorem whatever it is i don't wanna know";
-  final lorem = name * 100;
-  print(lorem);
-
+final names = ['Emma', 'Jomi', 'David', 'blessing'];
+// final oneName = names[3];
+print(names.length);
+names.add('Makanjuola');
+print(names.length);
 }
 
 class MyApp extends StatelessWidget {
