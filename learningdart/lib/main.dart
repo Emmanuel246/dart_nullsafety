@@ -13,13 +13,10 @@ void main() {
 }
 
 void test () {
-  final name = "Emmanuel";
-  if (name == "Emmanuel") {
-    print("Yes this is Emmanuel");
-  } else {
-    print('No this is not Emmanuel');
-    print('Emmanuel');
-  }
+  final age = 20;
+  final halfOfAge = age / 2;
+  final doubleTheAge = age * 2;
+  print(halfOfAge);
 }
 
 class MyApp extends StatelessWidget {
