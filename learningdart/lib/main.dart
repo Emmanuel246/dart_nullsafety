@@ -13,10 +13,10 @@ void main() {
 }
 
 void test () {
-  var age = 20;
-  final ageMinusOne = --age;
-  print(age);
-  print(ageMinusOne);
+  final name = "Lorem whatever it is i don't wanna know";
+  final lorem = name * 100;
+  print(lorem);
+
 }
 
 class MyApp extends StatelessWidget {
