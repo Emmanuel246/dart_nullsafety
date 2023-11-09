@@ -13,12 +13,22 @@ void main() {
 }
 
 void test () {
-final names = ['Emma', 'Jomi', 'David', 'blessing'];
-// final oneName = names[3];
-print(names.length);
-names.add('Makanjuola');
-print(names.length);
+  const String? lastName = null;
+  const String? middleName = "Iseoluwa";
+  const String? firstName = "Emmanuel";
+
+  // if (lastName != null) {
+  //   print("Last name is the first non-null value");
+  // } else if (middleName != null) {
+  //   print("Middle name is the first non-null value");
+  //   print(middleName);
+  // } else if (firstName != null) {
+  //   print("first name is the first non-null value");
+  // }
+  
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
