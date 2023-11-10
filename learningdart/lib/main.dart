@@ -12,11 +12,15 @@ void main() {
   runApp(const MyApp());
 }
 
-void test (String? firstName, String? middleName, String? lastName) {
-  String? name = firstName;
-  name ??= middleName;
-  name ??= lastName;
-  print(name);
+void test (List<String>? names) {
+  
+  final lenght = names?.length ?? 0;
+  print(lenght);
+  
+  // String? name = firstName;
+  // name ??= middleName;
+  // name ??= lastName;
+  // print(name);
   
   // const String? lastName = null;
   // const String? middleName = "Iseoluwa";
@@ -46,7 +50,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    test(null, null, "Emmanuella");
+    test(null);
     // print(getFullName('Makanjuola', 'Emmanuel'));
     return MaterialApp(
       title: 'Flutter Demo',
