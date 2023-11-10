@@ -12,13 +12,21 @@ void main() {
   runApp(const MyApp());
 }
 
-enum PersonProperties {
-  firstName, lastName, age
-}
+enum AnimalType {cat, dog, rabbit} 
 
+void test (AnimalType animalType) {
+  switch (animalType) {
+    case AnimalType.rabbit: 
+      print("I love cat they're so cute");
+      break;
+    case AnimalType.cat:
+      print('Cats');
+      break;
+    case AnimalType.dog:
+      print('Dog');
 
-void test () {
-  print(PersonProperties.firstName.name);
+  }
+  print("Function is finished");
 
   
   // String? name = firstName;
@@ -52,9 +60,9 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
-  @override
+  @override 
   Widget build(BuildContext context) {
-    test();
+    test(AnimalType.dog);
     // print(getFullName('Makanjuola', 'Emmanuel'));
     return MaterialApp(
       title: 'Flutter Demo',
