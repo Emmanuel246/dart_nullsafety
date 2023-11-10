@@ -12,10 +12,14 @@ void main() {
   runApp(const MyApp());
 }
 
-void test (List<String>? names) {
-  
-  final lenght = names?.length ?? 0;
-  print(lenght);
+enum PersonProperties {
+  firstName, lastName, age
+}
+
+
+void test () {
+  print(PersonProperties.firstName.name);
+
   
   // String? name = firstName;
   // name ??= middleName;
@@ -50,7 +54,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    test(null);
+    test();
     // print(getFullName('Makanjuola', 'Emmanuel'));
     return MaterialApp(
       title: 'Flutter Demo',
