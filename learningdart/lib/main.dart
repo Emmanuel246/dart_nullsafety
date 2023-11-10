@@ -12,10 +12,15 @@ void main() {
   runApp(const MyApp());
 }
 
-void test () {
-  const String? lastName = null;
-  const String? middleName = "Iseoluwa";
-  const String? firstName = "Emmanuel";
+void test (String? firstName, String? middleName, String? lastName) {
+  String? name = firstName;
+  name ??= middleName;
+  name ??= lastName;
+  print(name);
+  
+  // const String? lastName = null;
+  // const String? middleName = "Iseoluwa";
+  // const String? firstName = "Emmanuel";
 
   // if (lastName != null) {
   //   print("Last name is the first non-null value");
@@ -30,7 +35,7 @@ void test () {
 
 
 
-  
+
 }
 
 
@@ -41,7 +46,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    test();
+    test(null, null, "Emmanuella");
     // print(getFullName('Makanjuola', 'Emmanuel'));
     return MaterialApp(
       title: 'Flutter Demo',
