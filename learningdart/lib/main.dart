@@ -13,19 +13,18 @@ void main() {
 }
 
 class Person{
-  void run () {
-    print('Running');
-  }
+  final String name;
 
-  void breathe () {
-    print("Breathing");
+  Person(this.name);
+
+  void printName () {
+    print(name);
   }
 }
 
 void test () {
-  final person = Person();
-  person.run();
-  person.breathe();
+  final name = Person("Emmanuel");
+  name.printName();
 
   
   // String? name = firstName;
