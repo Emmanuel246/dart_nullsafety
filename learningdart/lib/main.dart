@@ -12,20 +12,25 @@ void main() {
   runApp(const MyApp());
 }
 
-class Person{
-  final String name;
+class LivingThing {
 
-  Person(this.name);
+  void breathe() {
+    print('Living thing is beathing');
+  }
 
-  void printName () {
-    print(name);
+  void move() {
+    print("I am moving very fast");
   }
 }
 
-void test () {
-  final name = Person("Emmanuel");
-  name.printName();
+class Cat extends LivingThing {}
 
+
+void test () {
+
+  final fluffer = Cat();
+  fluffer.move();
+  fluffer.breathe();
   
   // String? name = firstName;
   // name ??= middleName;
