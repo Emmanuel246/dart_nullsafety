@@ -12,25 +12,24 @@ void main() {
   runApp(const MyApp());
 }
 
-abstract class LivingThing {
+class Cat {
+  final String name;
+  Cat(this.name);
+  // factory Cat.fluffball() {
+  //   return Cat('Flufffyy Cat');
+  // }
 
-  void breathe() {
-    print('Living thing is beathing');
-  }
-
-  void move() {
-    print("I am moving very fast");
-  }
 }
-
-class Cat extends LivingThing {}
 
 
 void test () {
-
-  final fluffer = Cat();
-  fluffer.move();
-  fluffer.breathe();
+  final cat1 = Cat('Foo0');
+  final cat2 = Cat('Foo0');
+  if (cat1 == cat2) {
+    print('They are equal');
+  } else {
+    print('They are not equal');}
+   // final String name;[]
   
   // String? name = firstName;
   // name ??= middleName;
