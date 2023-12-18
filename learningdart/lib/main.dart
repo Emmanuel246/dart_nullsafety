@@ -12,52 +12,84 @@ void main() {
   runApp(const MyApp());
 }
 
-class Cat {
-  final String name;
-  Cat(this.name);
-  // factory Cat.fluffball() {
-  //   return Cat('Flufffyy Cat');
-  // }
-
+class Pair<A, B> {
+  final A value1;
+  final B value2;
+  Pair(this.value1, this.value2);
 }
-
-
-void test () {
-  final cat1 = Cat('Foo0');
-  final cat2 = Cat('Foo0');
-  if (cat1 == cat2) {
-    print('They are equal');
-  } else {
-    print('They are not equal');}
-   // final String name;[]
-  
-  // String? name = firstName;
-  // name ??= middleName;
-  // name ??= lastName;
-  // print(name);
-  
-  // const String? lastName = null;
-  // const String? middleName = "Iseoluwa";
-  // const String? firstName = "Emmanuel";
-
-  // if (lastName != null) {
-  //   print("Last name is the first non-null value");
-  // } else if (middleName != null) {
-  //   print("Middle name is the first non-null value");
-  //   print(middleName);
-  // } else if (firstName != null) {
-  //   print("first name is the first non-null value");
-  // }
-  
-
-
-
-
-
+ 
+void test() async{
+  final names = Pair(0.98, 'food');
+  print(names.value2);
 }
 
 
 
+// Iterable<int> getOneTwoThree() sync*{
+//   yield 1;
+//   yield 2;
+//   yield 3;
+// }
+// void test() {
+//   for (final value in getOneTwoThree()) {
+//     print(value);
+//     if (value == 2) {
+//       break;
+//     }
+//   }
+//   print(getOneTwoThree());
+//  }
+
+// class Cat {
+//   final String name;
+//   Cat(this.name);
+//   @override
+//   bool operator == (covariant Cat other) => other.name == name;
+  
+//   @override
+//   // TODO: implement hashCode
+//   int get hashCode => name.hashCode;
+// }
+
+// extension Run on Cat {
+//   void run() {
+//     print("$name is about to japa");
+//   }
+// }
+
+// class Person {
+//   final String firstName;
+//   final String lastName;
+// Person(this.firstName, this.lastName); 
+// }
+
+// extension FullName on Person {
+//   String get fullName => '$lastName $firstName'; 
+// }
+
+// void test () {
+//   final names = Person('Emma', 'Makanjuola');
+//   print(names.fullName);
+// }
+
+// Future<int> heavyFutureMultipliedByTwo(int a) {
+//   return Future.delayed(const Duration(seconds: 3), () => (a * 2));
+// }
+// void test() async{
+//   final result = await heavyFutureMultipliedByTwo(10);
+//  print(result);
+// }
+
+// Stream<String> getName() {
+//   return Stream.periodic(const Duration(seconds: 1), (value)
+//    {return "Timing";});
+// }
+// void test() async{
+//   await for (final value in getName()) {
+//     print(value);
+//   }
+//   print("Stream finished working");
+// }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
