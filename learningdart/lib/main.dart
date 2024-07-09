@@ -45,7 +45,7 @@ void test() async{
 //   Cat(this.name);
 //   @override
 //   bool operator == (covariant Cat other) => other.name == name;
-  
+
 //   @override
 //   // TODO: implement hashCode
 //   int get hashCode => name.hashCode;
@@ -60,11 +60,11 @@ void test() async{
 // class Person {
 //   final String firstName;
 //   final String lastName;
-// Person(this.firstName, this.lastName); 
+// Person(this.firstName, this.lastName);
 // }
 
 // extension FullName on Person {
-//   String get fullName => '$lastName $firstName'; 
+//   String get fullName => '$lastName $firstName';
 // }
 
 // void test () {
